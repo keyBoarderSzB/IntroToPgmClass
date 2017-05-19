@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>USER INPUT/FORMS</title>
+    </head>
+    <body>
+        <p>The FORM tag is used to encapsule all of the elements that are part of the form.<br/>
+        The form tag has 2 attributes normally associated with it.<br/>
+        First and most important is METHOD. <br/>
+        Second is ACTION. Both important and need to be included.<br/>
+        Method = how is data going to get to the server that is going to process is. Need backend server language (like PHP) to process. <br/>Method by which it is sent is either GET or POST.  Post puts the data in an array which is accesible by the program that is going to process it.<br/>
+        Get is less secure. Takes all the form info the user types in and puts it ihe URL. Problem is that data is exposed (query string), so generally not a good method to use.<br/>
+        Action = page that is going to process the data (such as a PHP page) or Python.<br/>
+        Form METHOD and ACTION are key to making the form work. HTML just designs the form.<br/>
+        TEXT INPUT - two types of text data entry boxes. The FOR attribute in the LABEL tag must match the ID attribute value in the INPUT tag. The INPUT tag is like the break tag, closed withi a slash at the end of the opening tag, no separate closing tag. In order to use PHP (separate course), the INPUT tag also needs to have a NAME attribute; this is used by the PHP code.<br/>
+        One of the advantages of linking the label to the input box is that, if the user clicks the label, the cursor flashes inside the input box.<br/>
+        Second text input type is a TEXTAREA. The TEXTAREA tag has separate opening/closing tag. Texts put between those are default text in the box. Textarea allows multiple lines. By default text area stretches, but can set via CSS also, but commonly done in HMTL also.
+        </p>
+        <h1>Here is My Heading</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" /><br/><br/>
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" /><br/><br/>
+            <label for="country">Country of Residence</label>
+            <input type="text" id="country" name="country" /><br/><br/>
+            <label for="commnets">Comments</label><br/>
+            <textarea type="textarea" id="comments" name="comments" cols="80" rows="5">Type your comments here.</textarea>
+        </form>
+    </body>
+</html>

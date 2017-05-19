@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+            h1 {
+                color: crimson;
+                font-weight: bolder;  
+            }
+            h1, h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-family:
+            }
+            h2 {
+                font-variant: small-caps;
+            }
+            p {
+                color:darkred;
+                font-style: italic;
+                font-size: 1.25em; 
+                line-height: 1.25em;
+            }
+            #first {
+                font-variant: small-caps;
+            }
+            #second {
+                font-style: normal;
+            }
+            .standout {
+                font-weight: bold;
+            }
+            ul {
+                list-style-type: square;
+                list-style-position: inside;
+            }
+            li{
+                padding-left: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="first">Separation of concerns: design/view separate from business logic/data layers</p>
+        <p>CSS = cascading stylesheet language</p>
+        <p>Add the style tag/element in the head of the document. In side the style element is CSS code. CSS code contains a selector (WHAT is being styled) and style rules (HOW it looks). If using a tag/element name, just the tag name with curly brackets following. Then the attribute followed by a colon, then the style selection, end with a semicolon.</p><br/>
+        
+        <p id="second">Re font-family, user must have the font noted or will not display as expected (will user default font on user's browser). So, font-family allows multiple options. Note that Brackets gives drop-down hints. First items are NOT specific fonts, but CATEGORIES of fonts; browser will select the default cursive/monospace/serif etc. font the user has. Or, can choose specific font family. So, best to use a groups of fonts.</p>
+        <p>To apply same style item to various elements, list each element separated by a comma</p>
+        
+        <p>Font size can be changed by POINT (more for print design). PIXELS, or EMs. One 1 (1em) is standard font size of user's browser. Can use increments to enlarge (1.5em, 2em, 2.5 em, etc.) ir decrease (.75em, .5 em, etc.) font size.</p>
+        <p>The font-variant option allows inherit, normal, and small-caps.</p>
+        <p>Can set LEADING (how closely/loose/y set the lines are. Use line-height. The em-scale works the same as for font-size.</p>
+        
+        <p>The text-decoration lets us set various properties such as underline and overline. Don't generally use underline because it makes it seem like the text is a line. But, sometimes overline can give a good effect.</p>
+        
+        <p>There are LOTS more of these style options besides those shown here and even within the options of each style item.</p>
+        
+        <p>To style LISTS in CSS, previously learned how to put the TYPE attribute in the ul or ol tag, but can also handle this in CSS. Use list-style-type. Again, MANY options within this to look at.</p>
+        
+        <p><span class="standout">Can use an image as a bullet.</span> list-style-image. Need to have image created ahead. Also need to have the image file in the same folder as the html document. (or else have to use a path in the file name) Example = <br/>
+        <strong>list-style-image: url(bullet.png);</strong></p>
+        <p><span class="standout">To adjust the indentation value in lists</span> by using the <strong>padding-left:</strong> attribute. This goes insdie the li CSS. To control the placement of the list markers relative to the edge of the list, use <strong>list-style-postion:</strong>; options are inside or outside. This goes inside the ol/ul CSS.</p><br/>
+        
+        <p><strong>CSS Classes and IDs. Any content can be marked with a CLASS or ID to use with style tage (also can be used by JavaScript).</strong><br/>
+        <span class="standout">For ID, add the id="idname"</span> in the opening tag of the element to be styled. Then, in the CSS, add that id prefaced by the # sound. Each id on the page is unique, i.e., can only be assigned to one element.<br/>
+        <span class="standout">Classes can be assigned to muliple elements in a document. In CSS, they are prefaced by a period.</span> Can use class="" inside a paragraph tag, but more often used with SPAN tags.</p>
+        <p>Spans can be used with classes and ids can be used with any element.</p>
+        <br/>
+        <h1>The Heading</h1>
+        <h2>The Subheading</h2>
+        <p>A paragraph of information.<br/>
+            A paragraph of information line 2.<br/>
+            A paragraph of information line 3.<br/>       
+            A paragraph of information line 4.<br/>
+        </p>
+        <h2>The Subheading 2</h2>
+        <p>A paragraph of information.<br/>
+            A paragraph of information line 2.<br/>
+            A paragraph of information line 3.<br/>       
+            A paragraph of information line 4.<br/>
+        </p>
+        
+        <h1>Places I'd Like To Visit:</h1>
+        <p>Africa - Countries</p>
+            <ul>
+                <li>Kenya</li>
+                <li>Tanzania</li>
+                <li>Botswana</li>
+                <li>South Africa</li>
+                <li>Mozambique</li>
+            </ul>
+        <p>Africa - Places</p>
+            <ol>
+                <li>Amboseli</li>
+                <li>The Serengeti</li>
+                <li>Okavango Delta</li>
+                <li>Ngorongoro Crater</li>
+                <li>Bruger National Park</li>
+                <li>Gorongosa National Park</li>
+            </ol>
+        
+        <h2>LINKS and MEDIA</h2>
+        <p>hyperlinks</p>
+        <p>external links: hyperlinks from current site/domain to external site/domain</p>
+            <ul>
+                <li>First part of link is the test the user will select; this is surrounded by anchor tags.</li>
+                <li>In the opening anchor tag, put the href="" with the fully-qualified url of the link inside the quotes</li>
+                <li>sample: You can take this <a href="http://www.udemy.com/">course on Udemy</a>.</li>
+                <li>if you link to a site that doesn't exist or the site changes its address = broken link</li>
+            </ul>
+        <p>internal links: link to page within your site/domain</p>
+            <ul>
+                <li>href in internal links is only the file name OR </li>
+                <li>This is a link to the <s href="intro2pgm_Ex35.html">restaurant review</s> project.</li>
+                <li>Should NOT have deadends (where user needs to use back button) in internal links, so create a return [internal link] from the linked page back to the original page.</li>
+            </ul>
+    </body>
+</html>
+    
+

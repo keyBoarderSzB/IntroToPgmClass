@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio</title>
+    </head>
+    <body>
+        <h1>Some Audio Info</h1>
+        <p>Initial tag is audio, attribute control="controls" uses the controls of the users browser, which will vary some from browser to browser.</p>
+        <p>Different browsers may support different audio file types (wav, mp3, ogg, etc.). Most browsers nowadays support mp3.</p>
+        <p>NOTE: If there is a space in the file name, it will be represented by a %20 in the linked file name.</p>
+        <audio controls="controls">
+            <source src="audio/23%20-%20Canon%20in%20D%20(Distant%20Freeway%20Mix).mp3" />
+            <source src="audio/23%20-%20Canon%20in%20D%20(Distant%20Freeway%20Mix).ogg" />
+        </audio>
+        <p>For file types not supported on a browser, list a second source. If browser does not support the first audio file type, will look at the next one. </p>
+    </body>
+</html>

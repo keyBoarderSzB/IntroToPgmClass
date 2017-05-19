@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 100%
+            }
+            
+            tr, th, td
+            {
+                border: 1px dotted blue;
+            }
+            
+            th
+            {
+                background-color: black;
+                color: white;
+            }
+            
+            .second
+            {
+              background-color: darkseagreen;  
+            }
+        </style>
+    </head>
+    <body>
+        <p>Tables. <br/>
+        Note that each piece of the grid has its own borders. In order to combine the borders (so don't appear as a double line where the sections join), use the border-collapse rule in the table style.<br/>
+        Can set width of table to fill the PARENT (which here is the browser screen) by using width: 100%; OR can specify a certain number of pixels, such as width: 500; <br/>
+        See samples above for colors. Can set for the entire element type OR can use a CLASS to specify the section.<br/>
+        
+        </p>
+        <table>
+            <tr>
+                <th>First Text in Table Heading</th>    
+                <th>Second Text in Table Heading</th>
+                <th>Third Text in Table Heading</th>    
+            </tr>
+            <tr>
+                <td>Data1 for First</td><td class="second">Data1 for Second</td><td>Data1 for Third</td>
+            </tr>
+            <tr>
+                <td>Text2 for First Col</td>
+                <td class="second">Text2 for Second</td>
+                <td>Text2 for Third</td>
+            </tr>
+            <tr>
+                <td>Text3 for First Col</td>
+                <td class="second">Text3 for Second</td>
+                <td>Text3 for Third</td>
+            </tr>
+            <tr>
+                <td>Data4 for First Col</td>
+                <td class="second" rowspan="2">Data4and5 for 2nd Col</td>
+                <td>Data4 for Third</td>
+            </tr>
+            <tr>
+                <td>Data5 for First</td>
+                <!-- NO 2nd item here because included in row above -->
+                <td>Data5 for Third</td>
+            </tr>
+            <tr>
+                <td>Data6 for First</td>
+                <td class="second" colspan="2">Data6 for Second and Third Columns</td>
+            </tr>
+        </table>
+    </body>
+</html>
